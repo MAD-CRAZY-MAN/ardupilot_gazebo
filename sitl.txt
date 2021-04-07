@@ -1,0 +1,17 @@
+ardupilot sitl
+cd ~/ardupilot/ArduCopter
+../Tools/autotest/sim_vehicle.py -f gazebo-iris 
+
+start gazebo
+cd ~/peach/ardupilot_gazebo
+gazebo --verbose worlds/iris_arducopter_runway.world
+
+
+launch 할 때는 roscore 안해도 됨
+mavros launch apm.launch
+rostopic list
+rosservice list
+rosservice call /mavros/cmd/takeoff tap
+rostopic echo /mavros/state 
+rosservice info /mavros/param/push
+rossrv show mavros_msgs/ParamPush
