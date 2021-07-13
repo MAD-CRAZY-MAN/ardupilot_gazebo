@@ -86,13 +86,7 @@
     
     <model name="iris_demo">
       <include>
-	<uri>model://target_ardupilot</uri>
-      </include>
-    </model>
-
-    <model name="iris_demo2">
-      <include>
-	<uri>model://follower_ardupilot</uri>
+	<uri>model://iris_with_ardupilot</uri>
       </include>
     </model>
   </world>
