@@ -23,8 +23,8 @@ rossrv show mavros_msgs/ParamPush
 
 
 multi sitl
-../Tools/autotest/sim_vehicle.py -f gazebo-iris --sysid 1 --instance 0 --out 127.0.0.1:14550
-../Tools/autotest/sim_vehicle.py -f gazebo-iris --sysid 2 --instance 1 --out 127.0.0.1:14560
+../Tools/autotest/sim_vehicle.py -f gazebo-iris --sysid 1 --instance 0 --out 127.0.0.1:14560
+../Tools/autotest/sim_vehicle.py -f gazebo-iris --sysid 2 --instance 1 --out 127.0.0.1:14570
 
 gazebo --verbose ./worlds/iris_arducopter_runway.world
 world 파일에서 drone model을 사용하는 기체 수 만큼 include 해야함
